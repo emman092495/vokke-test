@@ -1,15 +1,5 @@
 import React from "react";
-import DataGrid, {
-  Column,
-  Editing,
-  Paging,
-  Selection,
-  Lookup,
-  Toolbar,
-  Item,
-  Form,
-} from "devextreme-react/data-grid";
-import { Button } from "devextreme-react/button";
+import DataGrid, { Column, Editing, Lookup } from "devextreme-react/data-grid";
 import { useDispatch, useSelector } from "react-redux";
 
 import { message } from "antd";
@@ -28,7 +18,7 @@ function KangarooTable() {
 
   const onSaved = (events) => {
     console.log(events);
-    if (events?.changes && events?.changes[0]?.type != "remove") {
+    if (events?.changes && events?.changes[0]?.type !== "remove") {
       dispatch(updateList(events?.changes[0].data));
 
       messageApi.open({

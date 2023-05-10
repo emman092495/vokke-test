@@ -8,8 +8,8 @@ export const kangarooSlice = createSlice({
         id: 1683724827718,
         name: "Aqmal",
         nickname: "test",
-        weight: 1,
-        height: 1,
+        weight: 12,
+        height: 30,
         gender: "Male",
         color: "123",
         friendliness: "Friendly",
@@ -23,13 +23,13 @@ export const kangarooSlice = createSlice({
     },
     updateList: (state, action) => {
       const { id } = action.payload;
-      const filteredState = state.listings.filter((item) => item.id != id);
+      const filteredState = state.listings.filter((item) => item.id !== id);
 
       state.listings = [action.payload, ...filteredState];
     },
     deleteList: (state, action) => {
       const id = action.payload;
-      const filteredState = state.listings.filter((item) => item.id != id);
+      const filteredState = state.listings.filter((item) => item.id !== id);
 
       state.listings = [...filteredState];
     },

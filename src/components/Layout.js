@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
 import "antd/dist/reset.css";
 import {
   MenuFoldOutlined,
   MenuUnfoldOutlined,
-  UploadOutlined,
   OrderedListOutlined,
   UserAddOutlined,
 } from "@ant-design/icons";

@@ -1,12 +1,10 @@
-import logo from "./logo.svg";
 import { Provider } from "react-redux";
-import { Route, Routes, Navigate } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 import store from "./store/store";
 import Home from "./pages/home";
 import AddNew from "./pages/add-new";
 
-import { useDispatch, useSelector } from "react-redux";
 import "devextreme/dist/css/dx.light.css";
 
 function App() {

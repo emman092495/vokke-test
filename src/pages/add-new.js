@@ -1,44 +1,29 @@
-import { PlusOutlined } from "@ant-design/icons";
 import { useDispatch, useSelector } from "react-redux";
 import DashboardLayout from "../components/Layout";
-
 import { createList } from "../store/reducers/kangaroo_slice";
-
 import {
   Button,
   Col,
   DatePicker,
-  Drawer,
   Form,
   Input,
   Row,
   Select,
-  Space,
   message,
   InputNumber,
 } from "antd";
-import { useState } from "react";
 const { Option } = Select;
 
 const AddNew = () => {
   const store = useSelector((state) => state.listings);
-
-  const [form] = Form.useForm();
-  const [open, setOpen] = useState(false);
-  const [messageApi, contextHolder] = message.useMessage();
-
   const dispatch = useDispatch();
 
-  const showDrawer = () => {
-    setOpen(true);
-  };
-  const onClose = () => {
-    setOpen(false);
-  };
+  const [form] = Form.useForm();
+  const [messageApi, contextHolder] = message.useMessage();
 
   const onFinish = (items) => {
     const { name } = items;
-    const findName = store?.listings.find((i) => i.name == name);
+    const findName = store?.listings.find((i) => i.name === name);
 
     if (!findName) {
       dispatch(
@@ -84,7 +69,7 @@ const AddNew = () => {
                     message: "Sorry, this name is already taken.",
                     validator: (_, value) => {
                       const findName = store?.listings.find(
-                        (i) => i.name == value
+                        (i) => i.name === value
                       );
 
                       if (!findName) {
