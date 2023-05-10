@@ -1,6 +1,6 @@
 # Vokke Test - Readme Instructions
 
-This document provides instructions on how to run the "vokke-trial" application. Follow the steps below to set up and run the application successfully.
+This document provides instructions on how to run the "vokke-test" application. Follow the steps below to set up and run the application successfully.
 
 ## Prerequisites
 
