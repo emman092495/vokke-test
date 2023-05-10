@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Vokke Test - Readme Instructions
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This document provides instructions on how to run the "vokke-test" application. Follow the steps below to set up and run the application successfully.
 
-## Available Scripts
+## Prerequisites
 
-In the project directory, you can run:
+Before you proceed, ensure that you have the following software installed on your system:
 
-### `npm start`
+* `Node.js (version 14 or above)`
+* `npm (Node Package Manager)`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository or download the source code for "vokke-trial" from the provided source.
 
-### `npm test`
+2. Open a terminal or command prompt and navigate to the project directory.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Run the following command to install the project dependencies:
 
-### `npm run build`
+###  `npm install`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This will download and install all the required dependencies specified in the package.json file.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Running the Application
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Once the installation process is complete, follow the steps below to run the application:
 
-### `npm run eject`
+1. In the terminal or command prompt, navigate to the project directory if you are not already in it.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Execute the following command to start the application:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+###  `npm run start`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This command will start the development server and launch the application in your default web browser.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. The application should now be up and running. You can access it by opening the following URL in your web browser:
 
-## Learn More
+###  `http://localhost:3000`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+If port 3000 is already in use, the terminal will prompt you to use an alternative port.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### Available Scripts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The following scripts are available for this project:
 
-### Analyzing the Bundle Size
+* npm start: Starts the development server and launches the application.
+* npm build: Builds the application for production.
+* npm test: Runs the test scripts for the application.
+* npm eject: Ejects the application from Create React App configuration.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+### Additional Information
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* The application uses various dependencies listed in the package.json file. You can refer to their respective documentation for more details on their usage.
 
-### Advanced Configuration
+* The project includes an ESLint configuration (eslintConfig) to ensure code quality and consistency. The configuration extends the "react-app" and "react-app/jest" configurations.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* The browserslist section in the package.json file defines the supported browsers for the production and development environments.
